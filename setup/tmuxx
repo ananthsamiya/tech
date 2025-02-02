@@ -1,0 +1,15 @@
+#!/bin/sh
+
+tmux has-session -t ananth 2>/dev/null
+
+if [ $? != 0 ]; then
+    tmux new-session -d -s ananth
+    tmux new-window -t ananth:1 -n 'nodeT'
+    tmux split-window -v -t ananth:1
+    tmux split-window -h -t ananth:1
+    tmux new-window -t ananth:2 -n 'node1-node2'
+    tmux split-window -h -t ananth:2
+    tmux send-keys -t
+fi
+
+tmux attach-session -t ananth

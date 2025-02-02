@@ -1,0 +1,10 @@
+# This startup service should be present in /lib/systemd/system/ folder
+# Update the /usr/local/bin/init.sh with the necessary initialization script and provide execute permission
+[Unit]
+Description=Server config init script
+
+[Service]
+ExecStart=/bin/bash /usr/local/bin/init.sh
+
+[Install]
+WantedBy=multi-user.target

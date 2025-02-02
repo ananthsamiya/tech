@@ -1,0 +1,8 @@
+color desert
+set expandtab " Use spaces instead of Tabs
+set tabstop=4 " Set the number of spaces for Tabs
+set softtabstop=4 " Set the number of spaces for <Tab> & <BS> in Insert mode
+syntax on " Syntax highlighting
+set showmatch " shows matching brackets
+set ruler " Always shows location in file (line#)
+set shiftwidth=4
